@@ -1,38 +1,117 @@
-.App {
+.main-wrapper {
+  width: 85vw;
+  margin: 50px auto;
+}
+
+.search-from-container {
+  margin-bottom: 60px;
+}
+
+.search-from-container h1 {
+  color: #102A42;
+  font-size: 2.8rem;
+  margin: 10px 0 20px 0;
+  letter-spacing: 2px;
+  font-family: roboto, sans-serif;
+}
+
+.search-input {
+  width: 80%;
+  max-width: 550px;
+  border: none;
+      border-bottom-color: currentcolor;
+      border-bottom-style: none;
+      border-bottom-width: medium;
+  background-color: transparent;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 8px 8px 15px;
+  border-bottom: 3px solid #BCCCDC;
+  color: #324D67;
+}
+
+.controller-wrapper {
   text-align: center;
+  margin: 10px auto 45px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ctrl-btn {
+  border: none;
+  outline: none;
+  background-color: #49A6E9;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 1rem;
+  border-radius: 4px;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.controller-wrapper span {
+  color: #324D67;
+  font-weight: 700;
+  font-size: 1.2rem;
+  word-spacing: 2px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.story-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.story-wrapper {
+  background-color: #FFF;
+  padding: 1.2rem;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.story-wrapper h1 {
+  margin: 0;
+  color: #2D2A42;
+}
+
+.story-wrapper p {
+  margin: 10px auto;
+  color: #617D98;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: .9rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-remove {
+  color: #BB2525;
+}
+.btn-read {
+  color: #49A6E9;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
